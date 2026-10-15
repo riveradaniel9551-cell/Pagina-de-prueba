@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patchouli Café</title>
+    <link rel="stylesheet" href="css/miestilo.css">
+    <link rel="stylesheet" href="css/inicio.css">
+</head>
+<body>
+    <div class="pagina">
+        <!-- Encabezado del sitio -->
+        <header>
+            <div class="logo">
+                <img src="img/logo-patchouli.png" alt="Logo de Patchouli Café">
+                <div class="logo-texto">
+                    <h1>Patchouli</h1>
+                    <p>Café &amp; libros</p>
+                </div>
+            </div>
+
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="menu.html">Menú</a>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+        </header>
+
+        <!-- Contenido de la página -->
+        <main>
+            <section class="portada" id="inicio">
+                <div class="texto-portada">
+                    <p class="saludo">Un rincón tranquilo para leer</p>
+                    <h2>Una taza de café,<br>un mundo de historias.</h2>
+                    <p>Te gusta Touhou? ¡Bienvenido a Patchouli!</p>
+                    <a class="boton" href="menu.html">Ver el menú</a>
+                    <a class="boton" href="contacto.html">Contáctanos</a>
+                </div>
+
+                <div class="presentacion-imagenes" role="region" aria-roledescription="carrusel" aria-label="Imágenes de Patchouli Café">
+                    <div class="diapositiva activa">
+                        <img src="img/cafe-libros-flores.webp" alt="Libros sobre una mesa de madera junto a flores">
+                    </div>
+                    <div class="diapositiva" hidden>
+                        <img src="img/interior-cafeteria-libros.webp" alt="Rincón acogedor de una cafetería con libros y sillones">
+                    </div>
+                    <div class="diapositiva" hidden>
+                        <img src="img/libreria-cafeteria.webp" alt="Estanterías llenas de libros y mesas para sentarse">
+                    </div>
+                    <button class="control-carrusel anterior" type="button" aria-label="Ver imagen anterior">‹</button>
+                    <button class="control-carrusel siguiente" type="button" aria-label="Ver imagen siguiente">›</button>
+                    <div class="indicadores-carrusel" aria-label="Elegir imagen">
+                        <button class="indicador activo" type="button" aria-label="Mostrar imagen 1" aria-current="true"></button>
+                        <button class="indicador" type="button" aria-label="Mostrar imagen 2"></button>
+                        <button class="indicador" type="button" aria-label="Mostrar imagen 3"></button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- productos destacados -->
+            <section class="seccion-menu" id="menu">
+                <h2>Nuestros favoritos</h2>
+                <p class="introduccion">Una selección pequeña, hecha con cariño.</p>
+
+                <div class="productos">
+                    <article class="producto">
+                        <div class="icono">☕</div>
+                        <h3>Latte Violeta</h3>
+                        <p>Espresso, leche cremosa y un toque de lavanda.</p>
+                        <span>$55</span>
+                    </article>
+
+                    <article class="producto">
+                        <div class="icono">🍵</div>
+                        <h3>Té de la Biblioteca</h3>
+                        <p>Té negro con canela, vainilla y un poco de miel.</p>
+                        <span>$48</span>
+                    </article>
+
+                    <article class="producto">
+                        <div class="icono">🍰</div>
+                        <h3>Pastel de Mora</h3>
+                        <p>Rebanada de pastel de vainilla con frutos rojos.</p>
+                        <span>$60</span>
+                    </article>
+                </div>
+            </section>
+
+            <!-- sección que habla del cafe xd-->
+            <section class="nosotros" id="nosotros">
+                <div>
+                    <p class="saludo">SOBRE PATCHOULI</p>
+                    <h2>Un café inspirado por la magia de los libros.</h2>
+                </div>
+                <p>Somos una cafetería donde puedes tomar algo caliente, terminar una novela, hablar acerca tu saga favorita o simplemente descansar. Nuestro nombre está inspirado en Patchouli, esa maga del titulo tan famoso de Touhou.</p>
+            </section>
+        </main>
+
+        <!-- pie de pagina(las paginas tienen pies?) -->
+        <footer id="contacto">
+            <p><strong>Patchouli Café</strong> · Colonia Centro Av. 20 de Noviembre</p>
+            <p>Martes a domingo · 9:00 a 20:00</p>
+        </footer>
+    </div>
+
+    <script src="js/carrusel.js" defer></script>
+</body>
+</html>
